@@ -1,0 +1,11 @@
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://bwb1o3kgi680l"]
+
+[sub_resource type="SystemFont" id="SystemFont_mhr1j"]
+font_names = PackedStringArray("Noto Mono", "Sans-Serif")
+
+[resource]
+line_spacing = 0.0
+font = SubResource("SystemFont_mhr1j")
+font_size = 10
+outline_size = 3
+outline_color = Color(0, 0, 0, 1)

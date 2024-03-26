@@ -1,0 +1,46 @@
+[gd_scene load_steps=2 format=3 uid="uid://dfaldab75bv7l"]
+
+[ext_resource type="PackedScene" uid="uid://csgq876kstiip" path="res://Scene/Card/slot.tscn" id="1_c75wt"]
+
+[node name="Board" type="PanelContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -738.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_right = 20
+
+[node name="GridContainer" type="GridContainer" parent="MarginContainer"]
+layout_mode = 2
+columns = 8
+
+[node name="Slot" parent="MarginContainer/GridContainer" instance=ExtResource("1_c75wt")]
+layout_mode = 2
+
+[node name="Slot2" parent="MarginContainer/GridContainer" instance=ExtResource("1_c75wt")]
+layout_mode = 2
+
+[node name="Slot3" parent="MarginContainer/GridContainer" instance=ExtResource("1_c75wt")]
+layout_mode = 2
+
+[node name="Slot4" parent="MarginContainer/GridContainer" instance=ExtResource("1_c75wt")]
+layout_mode = 2
+
+[node name="Slot5" parent="MarginContainer/GridContainer" instance=ExtResource("1_c75wt")]
+layout_mode = 2
+
+[node name="Slot6" parent="MarginContainer/GridContainer" instance=ExtResource("1_c75wt")]
+layout_mode = 2
+
+[node name="Slot7" parent="MarginContainer/GridContainer" instance=ExtResource("1_c75wt")]
+layout_mode = 2
+
+[node name="Slot8" parent="MarginContainer/GridContainer" instance=ExtResource("1_c75wt")]
+layout_mode = 2
