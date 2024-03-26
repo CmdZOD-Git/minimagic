@@ -1,0 +1,56 @@
+[gd_scene load_steps=6 format=3 uid="uid://csgq876kstiip"]
+
+[ext_resource type="Script" path="res://Scene/Card/card.gd" id="1_d8efw"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ew10t"]
+content_margin_left = 2.0
+content_margin_top = 2.0
+content_margin_right = 2.0
+content_margin_bottom = 2.0
+bg_color = Color(0, 0, 0.121569, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="Theme" id="Theme_wvad4"]
+PanelContainer/styles/panel = SubResource("StyleBoxFlat_ew10t")
+
+[sub_resource type="Gradient" id="Gradient_6vgpe"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0.415897, 0.458448, 1, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_q72lt"]
+gradient = SubResource("Gradient_6vgpe")
+width = 156
+height = 222
+
+[node name="Slot" type="AspectRatioContainer"]
+custom_minimum_size = Vector2(104, 148)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1124.0
+offset_bottom = -738.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = SubResource("Theme_wvad4")
+ratio = 0.703
+script = ExtResource("1_d8efw")
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="PanelContainer"]
+visible = false
+layout_mode = 2
+texture = SubResource("GradientTexture2D_q72lt")
+expand_mode = 3
+stretch_mode = 5

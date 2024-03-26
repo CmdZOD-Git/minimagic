@@ -1,0 +1,32 @@
+[gd_scene load_steps=2 format=3 uid="uid://efmdyjjtuxoi"]
+
+[ext_resource type="PackedScene" uid="uid://c2rc23rcifivd" path="res://Scene/Card/card_template.tscn" id="1_5kygc"]
+
+[node name="Hand" type="PanelContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -738.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+
+[node name="VBoxContainer" type="HBoxContainer" parent="."]
+clip_contents = true
+layout_mode = 2
+alignment = 1
+
+[node name="Card" parent="VBoxContainer" instance=ExtResource("1_5kygc")]
+layout_mode = 2
+
+[node name="Card2" parent="VBoxContainer" instance=ExtResource("1_5kygc")]
+layout_mode = 2
+
+[node name="Card3" parent="VBoxContainer" instance=ExtResource("1_5kygc")]
+layout_mode = 2
+
+[node name="Card4" parent="VBoxContainer" instance=ExtResource("1_5kygc")]
+layout_mode = 2
+
+[node name="Card5" parent="VBoxContainer" instance=ExtResource("1_5kygc")]
+layout_mode = 2
